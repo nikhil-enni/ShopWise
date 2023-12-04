@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.hellofx.HomeController">
+  <children>
+    <AnchorPane accessibleRole="BUTTON" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="137.0" layoutY="14.0" lineSpacing="1.0" opacity="0.53" prefHeight="107.0" prefWidth="448.0" style="&#10;" text="ShopWise&#10;" textOverrun="CLIP" wrapText="false">
+          <font>
+            <Font name="System Bold" size="84.0" />
+          </font>
+        </Label>
+            <Hyperlink layoutX="14.0" layoutY="247.0" onAction="#switchToLogin" prefHeight="35.0" prefWidth="71.0" text="Sign In">
+               <font>
+                  <Font size="20.0" />
+               </font> 
+            </Hyperlink>
+            <Hyperlink layoutX="13.0" layoutY="289.0" onAction="#switchToPrimary" prefHeight="54.0" prefWidth="248.0" text="Is this your first time? &#10;REGISTER HERE!" />
+            <Hyperlink layoutX="549.0" layoutY="359.0" onAction="#switchToTeam" text="Our Team">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Hyperlink>
+            <Text fill="#514d4d" layoutX="196.0" layoutY="193.0" stroke="#eee9e9" strokeType="OUTSIDE" strokeWidth="0.0" text="Transforming Retail, One Click at a Time." wrappingWidth="278.1337890625">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="115.0" fitWidth="107.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../shopwise.png" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
