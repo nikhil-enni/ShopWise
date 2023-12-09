@@ -31,16 +31,16 @@ public class SearchController implements Initializable {
     @FXML
     private Label email_id;
     @FXML
-    private Label insurance_plan;
+    private Label product;
     
     @FXML 
-    private Label insurance_name;
+    private Label product_category;
     
     @FXML
-    private Label monthly_payment;
+    private Label membership;
     
     @FXML 
-    private Label tenure;
+    private Label payment_method;
     
     @FXML
     private TextField search_bar;
@@ -98,19 +98,19 @@ public class SearchController implements Initializable {
         {
             Item plan = new Item();
             plan = plans.get(0);
-            insurance_name.setText(plan.product_category);
-            insurance_plan.setText(plan.product);
-            monthly_payment.setText(plan.membership+"");
-            tenure.setText(plan.payment_method+"");
+            product_category.setText(plan.product_category);
+            product.setText(plan.product);
+            membership.setText(plan.membership+"");
+            payment_method.setText(plan.payment_method+"");
             email_id.setText(plan.email_id);
         }
         else
         {
-            insurance_name.setText("There is no customer with active plans and given email id");
-            insurance_plan.setText("");
-            monthly_payment.setText("");
+        	product_category.setText("There is no customer with active items and given email id");
+        	product.setText("");
+            membership.setText("");
             email_id.setText("");
-            tenure.setText("");
+            payment_method.setText("");
         }
     }
 

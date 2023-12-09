@@ -175,21 +175,21 @@ public class AddplanController implements Initializable {
         Iterator i = plans.iterator();
         if(i.hasNext())
         {
-           welcome_string.setText("Update your plan");
+           welcome_string.setText("UPDATE YOUR ITEM");
            Item plan = new Item();
            plan = plans.get(0);
            
            productsCB.setValue(plan.getProduct());
            product_categoryCB.setValue(plan.getProductCategory());
-           payment_methodCB.setValue(plan.getMembership());
-           membershipCB.setValue(plan.getPaymentMethod());
+           membershipCB.setValue(plan.getMembership());
+           payment_methodCB.setValue(plan.getPaymentMethod());
            
            update_button.setVisible(true);
            plan_button.setVisible(false);
         }
         else
         {
-           welcome_string.setText("Add New plan");
+           welcome_string.setText("SHOP FOR AN ITEM");
            plan_button.setVisible(true);
            update_button.setVisible(false); 
         }

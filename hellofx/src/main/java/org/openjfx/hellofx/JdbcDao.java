@@ -53,8 +53,8 @@ public class JdbcDao {
         }
     }
     
-    public void addRecord(String email_id, String insurance_type, String insurance_name, 
-            String monthly_premium, String tenval) throws SQLException {
+    public void addRecord(String email_id, String productCategory, String product, 
+            String membership, String paymentMethod) throws SQLException {
 
         // Step 1: Establishing a Connection and 
         // try-with-resource statement will auto close the connection.
@@ -65,10 +65,10 @@ public class JdbcDao {
             PreparedStatement preparedStatement = connection.prepareStatement(ADD_QUERY) )
             {
                 preparedStatement.setString(1, email_id);
-                preparedStatement.setString(2, insurance_type);
-                preparedStatement.setString(3, insurance_name);
-                preparedStatement.setString(4, monthly_premium);
-                preparedStatement.setString(5, tenval);
+                preparedStatement.setString(2, productCategory);
+                preparedStatement.setString(3, product);
+                preparedStatement.setString(4, membership);
+                preparedStatement.setString(5, paymentMethod);
                 System.out.println(preparedStatement);
                 // Step 3: Execute the query or update query
                 push_log("Add Item for user: "+email_id);

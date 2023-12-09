@@ -23,9 +23,9 @@
                </image>
             </ImageView>
             <Hyperlink layoutX="522.0" layoutY="35.0" onAction="#switchtoHome" prefHeight="23.0" prefWidth="93.0" text="Back to Home" />
-            <ImageView fitHeight="283.0" fitWidth="426.0" layoutX="126.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="303.0" fitWidth="407.0" layoutX="135.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG_6205.jpeg" />
+                  <Image url="@../../../team.jpg" />
                </image>
             </ImageView>
       </children>
